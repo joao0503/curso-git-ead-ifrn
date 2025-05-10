@@ -39,6 +39,6 @@ git push -u origin-atividade add-comandos
 
 git add comandos.txt
 git commit -m 'adicionei TODOS os comandos usados'
-git push -u origin-atividade main
+git push -u origin-atividade add-comandos
 
 -- Fiz outro Pull Request --
