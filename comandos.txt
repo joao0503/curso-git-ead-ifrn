@@ -1,0 +1,26 @@
+João Antônio Oliveira Guedes
+
+git clone https://gitlab.com/mizael.cortez/curso-branchs-ifrn-ead
+cd curso-branchs-ifrn-ead
+
+echo "eu não fiz direito na primeira vez" > texto.txt
+git add texto.txt
+git commit -m 'criado arquivo texto.txt'
+
+git checkout -b feature-1
+echo "será se agora vai quem confia" > texto.txt
+git add texto.txt
+git commit -m 'alterado texto.txt na branch feature-1'
+
+git checkout main
+echo "ok terceira modificação é pra causar conflito" > texto.txt
+git add texto.txt
+git commit -m 'alterado texto.txt na main'
+git merge feature-1
+echo "será se agora vai quem confia" > texto.txt
+git add texto.txt
+git commit -m 'tentativa de resolver o conflito no merge'
+git checkout -b add-comandos
+
+git add comandos.txt
+git commit -m 'adicionado comandos.txt'
