@@ -22,5 +22,23 @@ git add texto.txt
 git commit -m 'tentativa de resolver o conflito no merge'
 git checkout -b add-comandos
 
+-- Arquivo comandos.txt criado manualmente --
+
 git add comandos.txt
 git commit -m 'adicionado comandos.txt'
+
+git remote add origin-atividade https://github.com/joao0503/curso-git-ead-ifrn.git
+git push -u origin-atividade main
+git push -u origin-atividade add-comandos
+
+git add comandos.txt
+git commit -m 'cara eu nao tinha salvado o arquivo no notepad++ vc me perdoa'
+git push -u origin-atividade add-comandos
+
+-- Fiz o Pull Request --
+
+git add comandos.txt
+git commit -m 'adicionei TODOS os comandos usados'
+git push -u origin-atividade add-comandos
+
+-- Fiz outro Pull Request --
